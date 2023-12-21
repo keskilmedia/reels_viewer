@@ -41,11 +41,12 @@ class _ReelsPageState extends State<ReelsPage> {
   @override
   void initState() {
     super.initState();
-    if (
-        // !UrlChecker.isImageUrl(widget.item.url) &&
-        UrlChecker.isValid(widget.item.url)) {
-      initializePlayer();
-    }
+    // if (
+    // !UrlChecker.isImageUrl(widget.item.url) &&
+    //     UrlChecker.isValid(widget.item.url)) {
+    //   initializePlayer();
+    // }
+    initializePlayer();
   }
 
   Future initializePlayer() async {
